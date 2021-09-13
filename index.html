@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dumpy</title>
+    <link rel="shortcut icon" type="image/png" href="g-removebg-preview.png" sizes="32x32">
+</head>
+<style>
+
+body {
+    margin:0;
+    overflow-x: hidden;
+}
+.myHeader {
+    grid-area: banner;
+    background-color: violet;
+    display: grid;
+}
+.myHeader h1{
+    text-align: center;
+    font-family: monospace;
+}
+.myHeader img {
+    float:right;
+    position: absolute;
+}
+ .wrapper {
+        display :grid;
+        grid-template-columns: 30vw 40vw 30vw;
+        grid-template-rows: 10vh 80vh 5vh 10vh;
+        grid-template-areas: "banner banner banner"
+                             "nav body side"
+                             "sha dha gha"
+                             "footer footer footer"
+        }
+
+
+.myBody{
+    background-color:olive;
+    grid-area: body;
+    padding-left: 10px;
+    padding-right: 5px;
+    line-height: 150%;
+    text-decoration: none;
+}
+.myBody h1 {
+    color: black;
+}
+.myVody{
+    background-color:olive;
+    grid-area: gha;
+    padding: 0 80px 10px;
+    line-height: 150%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.myLody{
+    background-color:olive;
+    grid-area: dha;
+    padding: 0 80px 10px;
+    line-height: 150%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.myGody{
+    background-color:olive;
+    grid-area: sha;
+    padding: 10px;
+    line-height: 150%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+
+}
+a.movies:link {
+    text-decoration: none;
+    line-height: 200%;
+}
+a.movies:hover {
+ text-decoration: underline;
+}
+a.books:link {
+    text-decoration:none;
+    line-height: 200%;
+}
+a.books:hover {
+    text-decoration:underline;
+    color:black;
+}
+.footer {
+    font-family: monospace;
+    background-color: orchid;
+    font-size: medium;
+    margin-top: 6.8cm;
+    height: 150px;
+    text-align: center;
+    width: 1280px;
+    float: left;
+}
+.align {
+    display: inline-block;
+}
+li {
+  float: left;
+  list-style-type: none;
+}
+
+li a {
+  display: block;
+  padding: 10px;
+}
+
+li a:hover {
+    transform: scale(1.1);
+}
+
+.myMovies {
+    grid-area: side;
+    background-color: purple;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.myInd {
+    grid-area : nav;
+    background-color:darkgreen; 
+    text-decoration: none; 
+    padding-left: 10px;
+    padding-right: 5px;  
+    line-height: 150%; 
+}
+.movies {
+    color: black;
+}
+
+
+@media (max-width: 700px) {
+    .myInd {
+                position : fixed;
+                top : 90px;
+                left : -150px;
+                width : 200px;
+                padding : 0 10px 50px;
+                border-style: solid;
+                border-width : thin;
+                opacity : 0%;
+                transition : 1s;
+            }
+
+            .myInd p {
+                background-color: bisque;
+                width : 50%;
+                padding : 10px;
+                margin : 0 auto;
+                margin-bottom : 10px;
+                border-style: solid;
+                border-width : thin;
+
+            }
+}
+
+</style>
+
+
+<body>
+    <div class="wrapper">
+
+        <!-- Code for banner  -->
+        <div class="myHeader">
+        <h1 href="http://127.0.0.1:5500/idk.html" id="myBanner">title</h1>
+        </div>
+    
+    <!-- Code for index panel -->
+    <div class="myInd" id="myIndID">
+        <a class="movies" href="http://127.0.0.1:5500/index.html"><h1>Movies I'm obsessed with and you should be too</h1></a>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae veniam voluptatem mollitia expedita est eum. Iure perspiciatis delectus tempore, aut, doloribus quaerat consequatur fugiat nobis beatae odit ipsum explicabo unde.
+    </div>
+
+        <!-- Code for news panel -->
+        <div class="myMovies">
+            <h1>Ipsum</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        </div>
+    
+        <!-- Code for the main body panel -->
+        <div class="myBody">
+            <a class="books"href="http://127.0.0.1:5500/spring%20book%20lis.html"><h1>Spring Book List 2021</h1></a>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, sunt. Nulla nesciunt ipsam amet provident modi eius explicabo odio atque iure. Saepe placeat minus id doloribus vel illum impedit ipsum.
+        </div>
+
+        <!-- Code for the main body panel -->
+        <div class="myVody">
+            <h1>About Me!</h1>
+            My name is Grace Thomas. Impedit, sunt. Nulla nesciunt ipsam amet provident modi eius explicabo odio atque iure. Saepe placeat minus id doloribus vel illum impedit ipsum.
+        </div>
+    
+        <!-- Code for the main body panel -->
+        <div class="myLody">
+            <h1>djadad</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, sunt. Nulla nesciunt ipsam amet provident modi eius explicabo odio atque iure. Saepe placeat minus id doloribus vel illum impedit ipsum.
+        </div>
+        <!-- Code for the main body panel -->
+        <div class="myGody">
+            <h1>Thank You to my Patreons!</h1>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Country</th>
+                </tr>
+                <tr>
+                    <td>Juvin Lee</td>
+                    <td>juvin.lee@gmail.com</td>
+                    <td>South Korea</td>
+                </tr>
+                <tr>
+                    <td>Ananya Nair</td>
+                    <td>ananya.nair@gmail.com</td>
+                    <td>India</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="footer">
+            Grace Thomas
+            <div class="align">
+                <ul>
+                <li>
+                    <a
+                href="https://www.instagram.com/">
+            <img src="instagram.jpg"alt="Instagram" width=20px height="20px">
+        </a>
+                </li>
+                <li>
+                    <a
+                        href="https://twitter.com/">
+                    <img src="twitter.png"alt="Twitter" width=20px height="20px">
+                </a> 
+            </li>
+
+            <li><a
+                href="https://www.tiktok.com/en/">
+            <img src="tiktok.png"alt="Tiktok" width=20px height="20px">
+        </a> </li>
+            <li><a
+                href="https://www.youtube.com/">
+            <img src="youtube.png"alt="Youtube" width=20px height="20px">
+        </a> </li>
+    </ul>
+            </div>
+
+
+            
+    </div>
+</body>

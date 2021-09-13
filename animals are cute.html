@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root {
+            --main-bg-color:purple;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin :0;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .wrapper {
+            display :grid;
+            grid-template-columns: 20vw 60vw 20vw;
+            grid-template-rows: 10vh 80vh 10vh;
+            grid-template-areas: "banner banner banner"
+                                "nav body side"
+                                "footer footer footer";
+        }
+
+        .myHeader {
+            grid-area : banner;
+            background-color:goldenrod;
+            display : grid;
+            place-content: center;
+           
+        }
+
+        #headerImage {
+            position : absolute;
+            left : 10px;
+            top : 0;
+            
+        }
+
+        #headerImage:hover {
+
+            
+            transform: scale(1.1);
+            transition: .5s;
+
+        }
+
+        .myHeader h1 {
+            color: var(--main-bg-color);
+            margin : 0;
+            display:grid;
+            place-content: center;
+        }
+        .myInd { 
+            grid-area : nav;
+            background-color: pink;
+            text-align: center;
+            
+        }
+        .myNews {
+            grid-area : side;
+            background-color: lightgrey;
+            padding-right : 5px;
+            padding-left: 5px;
+            
+        }
+        .myBody {
+            background-color: var(--main-bg-color);
+            grid-area : body;
+            padding : 0 80px 10px;
+            overflow : scroll;
+            line-height: 150%;
+
+            
+        }
+        .myBody img {
+            width : 80px;
+        }
+        .footer {
+            grid-area : footer;
+            background-color: black;
+            color: white;
+            font-size: x-small;
+            display : grid;
+            place-content: center;
+        }
+
+        @media (max-width :700px) {
+
+            .myHeader {
+                position : fixed;
+                width : 100%;
+                height : 80px;
+                
+            }
+            
+            .myBody {
+                background-color:coral;
+                padding-top : 100px;
+            }
+            .wrapper {
+                display :grid;
+                grid-template-columns: 100vw;
+                grid-template-rows: auto auto 10vh;
+                grid-template-areas:
+                                    "body"
+                                    "side"
+                                    "footer";
+            }
+
+            .myInd {
+                position : fixed;
+                top : 90px;
+                left : -150px;
+                width : 200px;
+                padding : 0 10px 50px;
+                border-style: solid;
+                border-width : thin;
+                opacity : 0%;
+                transition : 1s;
+            }
+
+            .myInd p {
+                background-color: bisque;
+                width : 50%;
+                padding : 10px;
+                margin : 0 auto;
+                margin-bottom : 10px;
+                border-style: solid;
+                border-width : thin;
+                transition :.5s;
+
+            }
+
+            .myInd p:hover {
+                background-color: black;
+                color: blanchedalmond;
+            }
+            
+            #closeWindow {
+                position : absolute;
+                font-size: xx-large;
+                top : 10px;
+                left : 10px;
+            }
+
+            #closeWindow:hover {
+                background-color: black;
+                color : white;
+
+            }
+         
+        }
+    </style>
+
+    <script>
+
+        function openMenu() {
+            document.getElementById("myIndID").style.opacity= "1";
+            document.getElementById("myIndID").style.transform = "translate(155px)";
+        }
+        function closeWindow() {
+            document.getElementById("myIndID").style.opacity= "0";
+        }
+    </script>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- Code for banner  -->
+        <div class="myHeader">
+            <img src="Hornsby Girls Logo (1).png" id="headerImage" onclick="openMenu()" width=80px alt="">
+            <h1 id="myBanner">Animals are Cute</h1>
+        </div>
+
+    <!-- Code for index panel -->
+    <nav class="myInd" id="myIndID">
+    <div id="closeWindow" onclick= "closeWindow()">X</div>
+        <h2>Translate Page</h2>
+        <p onclick="handleDogClick()">Spanish</p>
+        <p onclick="handleCatClick()">French</p>
+        <p onclick="handleHindiClick()">Hindi</p>
+        <p onclick="handleMandarinClick()">Traditional Chinese</p>
+    </nav>
+        <!-- Code for news panel -->
+        <div class=myNews>
+            <h2>News</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        </div>
+    
+        <!-- Code for the main body panel -->
+        <div class="myBody">
+            <h2>Body</h2>
+            
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed deserunt praesentium ad laborum ab reprehenderit perspiciatis maiores illo? Maxime maiores, debitis beatae quod vero quia repellat quos minima obcaecati illo quae repudiandae similique molestiae deleniti. Libero alias dolorem possimus distinctio perferendis quasi, molestiae consectetur quia ad cum unde, voluptate, deleniti labore itaque in. Corporis, accusamus aliquam soluta saepe molestiae qui hic possimus! Saepe delectus facilis dolores dicta cupiditate dignissimos tempore voluptatibus iste deleniti magni laborum doloribus maiores omnis natus at atque corrupti accusantium, odit adipisci totam fugit? Ut modi eius voluptatibus molestias assumenda perspiciatis et obcaecati odio asperiores hic voluptatem sapiente, sed nihil eos temporibus. Quos vero pariatur ipsam nihil. Neque nobis quae totam sint provident iusto laboriosam, aliquid, modi, accusantium quibusdam libero sed consectetur tenetur numquam dicta odio vitae vero voluptas quod labore ducimus dolore? Accusamus, dignissimos animi eius labore facilis, quis ipsa ea quos quisquam possimus rem tenetur veniam maiores numquam totam laboriosam doloribus deleniti natus. Eligendi, velit? Corporis voluptatum nisi, fugit natus dignissimos ipsa perspiciatis consectetur maiores obcaecati, sequi ab asperiores provident, repellendus odio dolore assumenda. Recusandae asperiores, veniam saepe nobis id itaque voluptatem excepturi suscipit. Ab temporibus accusantium non tenetur officiis doloremque reiciendis obcaecati? Quos, deserunt.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nam illo alias iure amet dignissimos dolor accusantium. Minus, aliquid alias. Aliquam similique repellat provident voluptatum possimus, aperiam quas reiciendis quibusdam amet animi expedita quae magnam quaerat! Quaerat molestiae facilis nihil doloremque odit temporibus, quia molestias necessitatibus atque voluptatem optio porro praesentium debitis unde voluptates corporis eaque, at iste itaque repudiandae amet dolorem, aperiam cupiditate vel! Placeat voluptatum doloribus cupiditate vel libero iste veniam. Fugit rem odit, voluptas impedit nobis vero maxime eveniet saepe magni, corporis assumenda obcaecati sint, doloremque vitae? Aperiam vel, architecto reprehenderit nihil quasi ipsum repellendus. Corrupti atque debitis eveniet sint excepturi minima nesciunt sapiente vitae voluptate quisquam. Cum adipisci maiores nam harum incidunt? Voluptates amet quas itaque debitis animi repellat ex sunt tempora quis pariatur, distinctio totam praesentium quod sit molestiae velit soluta molestias qui mollitia tenetur non minima eos? Voluptas ipsa quasi deleniti commodi ipsum doloremque porro repellendus consequatur magnam tempore, dolorum, consequuntur nam quis cumque fugiat corporis? Dignissimos esse recusandae nam impedit, similique fugiat dicta sequi doloribus illum a aliquam laboriosam provident dolore, incidunt voluptates eaque error repellendus. Error voluptatibus officia ut numquam modi ducimus. Excepturi deleniti quis praesentium commodi error incidunt beatae modi illum.
+        </div>
+    
+        <div class="footer">Copyright G.Horan 2021</div>
+    </div>
+
+
+    
+</body>
+</html>
