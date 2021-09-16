@@ -49,10 +49,11 @@ body {
     color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.myVody{
+.AboutMe {
     background-color:olive;
     grid-area: gha;
-    padding: 0 80px 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     line-height: 150%;
     min-height: 50vh;
     display: flex;
@@ -60,7 +61,7 @@ body {
 
 }
 
-.myLody{
+.PatreonTable{
     background-color:green;
     grid-area: dha;
     padding: 10px;
@@ -101,6 +102,15 @@ a.books:hover {
     text-decoration:underline;
     color:black;
 }
+.met:link {
+    text-decoration: none;
+    line-height: 200%;
+}
+.met:hover {
+    text-decoration: underline;
+    color: black;
+}
+
 .footer {
     font-family: monospace;
     background-color: orchid;
@@ -138,16 +148,18 @@ li a:hover {
     padding-left: 10px;
 }
 
-.myMovies {
+.MetGala {
     grid-area: side;
     background-color: purple;
     padding-right: 5px;
     padding-left: 5px;
 }
-.myMovies h1 {
+.MetGala h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-right: 10px;
+    color: black;
 }
-.myInd {
+.myMovies {
     grid-area : nav;
     background-color:darkgreen; 
     text-decoration: none; 
@@ -161,7 +173,7 @@ li a:hover {
 
 
 @media (max-width: 700px) {
-    .myInd {
+    .myMovies {
                 position : fixed;
                 top : 90px;
                 left : -150px;
@@ -173,7 +185,7 @@ li a:hover {
                 transition : 1s;
             }
 
-            .myInd p {
+            .myMovies p {
                 background-color: bisque;
                 width : 50%;
                 padding : 10px;
@@ -193,19 +205,19 @@ li a:hover {
 
         <!-- Code for banner  -->
         <div class="myHeader">
-        <h1 href="http://127.0.0.1:5500/idk.html" id="myBanner">soh cah toefu</h1>
+        <h1 href="http://127.0.0.1:5500/idk.html" id="myBanner">title</h1>
         </div>
     
     <!-- Code for index panel -->
-    <div class="myInd" id="myIndID">
+    <div class="myMovies" id="myIndID">
         <a class="movies" href="http://127.0.0.1:5500/index.html"><h1>Movies I'm obsessed with and you should be too</h1></a>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae veniam voluptatem mollitia expedita est eum. Iure perspiciatis delectus tempore, aut, doloribus quaerat consequatur fugiat nobis beatae odit ipsum explicabo unde.
     </div>
 
         <!-- Code for news panel -->
-        <div class="myMovies">
-            <h1>Ipsum</h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        <div class="MetGala">
+            <a class ="met" href="http://127.0.0.1:5500/ekwrjewr.html"><h1>Official Review of the 2021 Met Gala</h1></a>
+            It was definitely....something
         </div>
     
         <!-- Code for the main body panel -->
@@ -215,13 +227,13 @@ li a:hover {
         </div>
 
         <!-- Code for the main body panel -->
-        <div class="myVody">
+        <div class="AboutMe">
             <h1>About Me!</h1>
             My name is Grace Thomas. Impedit, sunt. Nulla nesciunt ipsam amet provident modi eius explicabo odio atque iure. Saepe placeat minus id doloribus vel illum impedit ipsum.
         </div>
     
         <!-- Code for the main body panel -->
-        <div class="myLody">
+        <div class="PatreonTable">
             <h1>Thank You to my Patreons!</h1>
             <table id="table">
                 <tr>
