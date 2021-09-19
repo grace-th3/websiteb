@@ -29,7 +29,7 @@ body {
  .wrapper {
         display :grid;
         grid-template-columns: 30vw 40vw 30vw;
-        grid-template-rows: 10vh 80vh 5vh 10vh;
+        grid-template-rows: 10vh 75vh 10vh;
         grid-template-areas: "banner banner banner"
                              "nav body side"
                              "sha dha gha"
@@ -37,25 +37,14 @@ body {
         }
 
 
-.myBody{
-    background-color:olive;
-    grid-area: body;
-    padding-left: 10px;
-    padding-right: 5px;
-    line-height: 150%;
-    text-decoration: none;
-}
-.myBody h1 {
-    color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
+
 .AboutMe {
     background-color:olive;
     grid-area: gha;
     padding-left: 5px;
-    padding-right: 5px;
+    padding-right: 10px;
     line-height: 150%;
-    min-height: 50vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
 
@@ -81,13 +70,26 @@ table, th, td {
     background-color:olive;
     grid-area: sha;    
     padding: 10px;
-    line-height: 150%;
-    display: flex;
-    flex-direction: column;
+    line-height: 200%;
     min-height: 50vh;
+    text-decoration: none;
+    padding-right: 5px;
 
 }
 .myGody h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:black;
+}
+.myBody{
+    background-color:olive;
+    grid-area: body;
+    padding-left: 10px;
+    padding-right: 5px;
+    line-height: 150%;
+    text-decoration: none;
+}
+.myBody h1 {
+    color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 a.movies:link {
@@ -110,6 +112,15 @@ a.books:hover {
     line-height: 200%;
 }
 .met:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.society:link {
+    text-decoration: none;
+    line-height: 200%;
+}
+.society:hover {
     text-decoration: underline;
     color: black;
 }
@@ -202,6 +213,11 @@ li a:hover {
 
             }
 }
+#simuliu {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 </style>
 
@@ -241,7 +257,7 @@ li a:hover {
             <h1>About Me!</h1>
             My name is Grace Thomas. I go to XXX High School and work as a part-time sausage dog and full-time Dev Patel stan.
             ↓ me n my homies
-            <img src="simuliustock.jpg" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" width ="200px">
+            <img id= "simuliu" src="simuliustock.jpg" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" width ="250px">
         </div>
     
         <!-- Code for the main body panel -->
@@ -282,7 +298,8 @@ li a:hover {
         </div>
         <!-- Code for the main body panel -->
         <div class="myGody">
-            <h1>hello!</h1>
+            <a  class="society" href="http://127.0.0.1:5500/lockdown%20lessons.html"><h1>Dear Netflix, Bring Back The Society</h1></a>
+            Arguably one of the best Netflix series and yall cancel it?? Embarrassing.
         </div>
         
         <div class="footer">
@@ -305,7 +322,7 @@ li a:hover {
 
             <li><a
                 href="https://www.tiktok.com/en/">
-            <img src="tiktok.png"alt="Tiktok" width=20px height="20px">
+            <img src="tiktok3.png"alt="Tiktok" width=20px height="20px">
         </a> </li>
             <li><a
                 href="https://www.youtube.com/">
