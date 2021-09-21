@@ -9,6 +9,7 @@
 <style>
 body {
     overflow-x: hidden;
+    margin: 0;
 }
 
 
@@ -27,6 +28,16 @@ body {
      text-decoration: none;
      color: black;
  }
+.jumpto h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.jumpto h4 {
+    text-decoration: none;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+
 #theessentials:link {
      text-decoration: black;
  }
@@ -35,26 +46,54 @@ body {
      color: black;
  }
 
-.family {
-     color: black;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-     padding-right: 10px;
-     padding-top: 10px;
-     float: right;
+ .family {
+    position : fixed;
+    top : 0;
+    right: 10px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  }
- 
- a.family:link {
+
+ .family:link {
      text-decoration: none;
 }
-a.family:hover {
+.family:hover {
  text-decoration: underline;
 }
+a.society:link {
+    text-decoration: none;
+}
+a.society:hover {
+ text-decoration: underline;
+}
+a.books:link {
+    text-decoration:none;
+}
+a.books:hover {
+    text-decoration:underline;
+    color:black;
+}
+.met:link {
+    text-decoration: none;
+}
+.met:hover {
+    text-decoration: underline;
+    color: black;
+}
+
 
 
 .article {
+    padding-left: 20px;
     margin-top: 50px;
-    font-family: 'Courier New', Courier, monospace;
     text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+.article h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.jumpto {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .creditsdates {
     margin-top: 100px;
@@ -65,6 +104,18 @@ a.family:hover {
 #gracethomas {
     color: red;
 }
+.flexplusadvert {
+    width: 100%;
+}
+.flex1 {
+    width: 200px;
+}
+.flex2 {
+    width: 200px;
+}
+.flex3 {
+    width: 200px;
+}
 
 .flex {
     display: flex;
@@ -72,8 +123,8 @@ a.family:hover {
     padding-bottom: 100px;
 }
 .fixedadvert {
-    padding-right: 40px;
-    gap: 100px;
+    padding-right: 10px;
+    float: right;
 }
 #footer {
     padding: 10px;
@@ -99,6 +150,103 @@ a.family:hover {
     font-family: chapaza;
     src: url(Chapaza.ttf);
 }
+.related h3 {
+    font-family:lemonmilk;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: small;
+}
+.fixedadvert h1 {
+    color: white;
+}
+.related {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    text-decoration: none;
+}
+.align {
+    display: inline-block;
+}
+li {
+  float: left;
+  list-style-type: none;
+}
+
+li a {
+  display: block;
+  padding: 10px;
+}
+li a:hover {
+    transform: scale(1.1);
+}
+#titl1:link {
+    text-decoration: none;
+}
+#titl1:hover {
+    text-decoration: underline;
+    color: black;
+}
+#titl2:link {
+    text-decoration: none;
+}
+#titl2:hover {
+    text-decoration: underline;
+    color: black;
+}
+#related {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-left: 20px;
+}
+#gracethomas1 {
+    color: aliceblue;
+    float: left;
+    padding-left: 10px;
+
+}
+#allrightsreserved {
+    color:aliceblue;
+    float: right;
+    padding-right: 25px;
+}
+#cocacola {
+    display: block;
+    align-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+.mailbox {
+    border: solid 5px;
+    background-color: peachpuff;
+    width: 250px;
+    height: 250px;
+    float: center;
+
+}
+.mailbox h2 {
+    font-family: lemonmilk;
+}
+#form {
+    display: inline-block;
+}
+.mailbox {
+    text-align: center;
+}
+.footer {
+    font-family: monospace;
+    font-size: small;
+    background-color:slategrey;
+    height: 60px;
+    text-align: center;
+    width: 1280px;
+    padding-left: 0%;
+}
+
 
 
 </style>
@@ -117,11 +265,18 @@ a.family:hover {
         <h5>published: 15 September 2021</h5>
         
     </div>
+    <div class="flexplusadvert">
     <div class="flex">
         <div class="article">
+            <div class="jumpto">
+                <h2>Jump to</h2>
+                <a id="titl1" href="#Best"><h4>↗ Best</h4></a>
+                <a id="titl2" href="#Worst"><h4>↗ Worst</h4></a>
+            </div>      
             <article>
+                <h1 id="Best" style="color: white;">Hello</h3>
+                    <h1 style="color: white;">whitetext</h1>                
                 <h1>BEST</h1>
-                <ol id="numbers">
                     <li>
                         <section> 
                             <h3>Yara Shahidi - Christian Dior gown</h3>
@@ -144,7 +299,11 @@ a.family:hover {
                         </section>
                     </li>
                 </ol>
-                <h1>Questionable</h1>
+
+                <h1 style="color: white;">HSHSH</h3>
+                <h1 id="Worst" style="color: white">whitetext</h1>
+                <h1 style="color: white;">whitetext</h1>
+                <h1>WORST</h1>
                 <ol>
                 <li>
                 <section> 
@@ -176,14 +335,100 @@ a.family:hover {
             <a
                 href="https://mcdonalds.com.au/"> 
                 <img src="long ad.jpg" alt="ad" width="200px" height="650px"> 
-            </a> 
-            <h3> hello </h3>
-            <h3>hello</h3>
-            <h3>hello</h3>
+            </a>
+                <h1>hello</h1>
+                <h1>hello</h1>
+                <h1>hello</h1>
+                <h1>hello</h1>
+                <h1>hello</h1>
             <a href="https://www.freshworks.com/" >
                 <img src="freshdesk ad.png" alt="ad" width="200px" height="650px">
-            </a>         
+            </a> 
+            <h1>hello</h1>
+            <h1>hello</h1>
+            <h1>hello</h1>
+            <h1>hello</h1>
+            <h1>hello</h1>
+            <h1>hello</h1>
+            <a href="https://www.google.com/search?q=mothers+day&ei=ajdJYdLPONTn9QO63L2oAg&oq=mothers+day&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEEMyBAgAEEMyCggAEIAEELEDEAoyDQgAEIAEELEDEIMBEAoyCggAEIAEELEDEAoyBQgAEIAEMgUIABCABDIFCAAQgAQyBwgAEIAEEAoyBQgAEIAEOgcIABBHELADOgcIABCwAxBDOhAILhDHARCjAhDIAxCwAxBDSgUIOBIBMUoECEEYAFDdDFixEGDgEmgBcAJ4AIABuQGIAdkCkgEDMC4ymAEAoAEByAEMwAEB&sclient=gws-wiz&ved=0ahUKEwjSrO2O947zAhXUc30KHTpuDyUQ4dUDCA4&uact=5">
+            <img src="mothersdaysale.jpg" alt="ad" width="200px" height="650px">
+            </a>
+            <h1>hello</h1>
+            <h1>hello</h1>
+            <h1>hello</h1>
+            <h1>hello</h1>
+            <h1>hello</h1>
+            <h1>hello</h1>
+            <a
+                href="https://mcdonalds.com.au/"> 
+                <img src="burgerking.png" alt="ad" width="250px" height="650px"> 
+            </a>
+                <h1>hello</h1>
+                <h1>hello</h1>
+                <h1>hello</h1>
+                <h1>hello</h1>
+                <h1>hello</h1>
+            <div class="mailbox">
+                <h2>The latest news.</h2>
+                <h2> In your inbox.</h2>
+                <form id="form">
+                    <input type="text" id="fname" name="email" placeholder="email address"><br><br>
+                    <input type="submit" value="Submit">
+                  </form>
+            </div>        
         </div>
+    </div>
+    <h2 id="related">Related</h2>
+    <div class="related">
+    <div class="flex1">
+    <a href="https://grace-th3.github.io/websiteb/thesociety.html"><img src="thesociety2.jpg" width="210px" height="120px"></a>
+        <a href="https://grace-th3.github.io/websiteb/thesociety.html" class ="society" ><h3>Movies I'm obsessed with and you should be too</h3></a>
+    </div>
+    <div class="flex2">
+        <a href="https://grace-th3.github.io/websiteb/harrystylesbooks.html">
+            <img src="harry styles book.jpeg" width="200px" height="120px">
+            </a>
+        <a href="https://grace-th3.github.io/websiteb/harrystylesbooks.html" class="books" ><h3>Reviewing Harry Styles' Favourite Books</h3></a>
+    </div>
+    <div class="flex3">
+        <a href="https://grace-th3.github.io/websiteb/metgala2021.html">
+            <img src="kim kardashian met gala 2021.jpg" width="200px" height="120px">
+        </a>
+        <a href="https://grace-th3.github.io/websiteb/metgala2021.html" class="met"><h3>Official Review of the 2021 Met Gala</h3></a>
+    </div>
+    </div>
+    <div class="bannerad">
+        <a href="https://www.kfc.com.au/">
+            <img id="cocacola" src="ad3.jpg" alt="ad" width="900px" height="200px">
+        </a>
+    </div>
+    <div class="footer">
+        <h4 id="gracethomas1">© Grace Thomas 2021</h4>
+        <h4 id="allrightsreserved">All rights reserved</h4>
+        <div class="align">
+            <ul>
+            <li>
+                <a
+            href="https://www.instagram.com/">
+        <img src="instagram.jpg"alt="Instagram" width=20px height="20px">
+    </a>
+            </li>
+            <li>
+                <a
+                    href="https://twitter.com/">
+                <img src="twitter.png"alt="Twitter" width=20px height="20px">
+            </a>
+        </li>
+
+        <li><a
+            href="https://www.tiktok.com/en/">
+        <img src="tiktok.png"alt="Tiktok" width=20px height="20px">
+    </a> </li>
+        <li><a
+            href="https://www.youtube.com/">
+        <img src="youtube.png"alt="Youtube" width=20px height="20px">
+    </a> </li>
+</ul>
         <!-- <div class="bannerad">
             <a href="www.kfc.com.au">
                 <img src="coca cola ad.jpg" alt="ad" width="500px" height="200px">
