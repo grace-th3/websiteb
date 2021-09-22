@@ -13,23 +13,7 @@ body {
     margin: 0;
 }
 
-
-.myHeader {
-    background:darkred;
-    width : 100%;
-    height : 60px;
-    top: 0;
-    left: 0%;
-    position: fixed;
-    text-decoration:none;
- }
- .myHeader h2{
-     text-align: center;
-     font-family: newyork;
-     text-decoration: none;
-     color: black;
- }
- .sidebar {
+.sidebar {
   height: 100%;
   width: 0;
   position: fixed;
@@ -50,7 +34,7 @@ body {
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 10px;
   color:grey;
   display: block;
   transition: 0.3s;
@@ -70,7 +54,6 @@ body {
 
 .openbtn {
   font-size: 25px;
-  cursor: pointer;
   padding: 10px 15px;
   border: none;
   background-color: darkred;
@@ -80,11 +63,21 @@ body {
 .openbtn:hover {
   background-color: #444;
 }
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
+.myHeader {
+    background:darkred;
+    width : 100%;
+    height : 60px;
+    top: 0;
+    left: 0%;
+    position: fixed;
+    text-decoration:none;
+ }
+ .myHeader h2{
+     text-align: center;
+     font-family: newyork;
+     text-decoration: none;
+     color: black;
+ }
 
  #societyimg {
      grid-area: img;
@@ -238,33 +231,21 @@ a.books:hover {
 .fixedadvert h1 {
     color: white;
 }
-.li2 {
-    display: inline-block
-}
-.li2 {
-  float: left;
-  list-style-type: none;
-  padding-right: 20px;
-}
 
-.li2 a {
-  display: block;
+.align {
+    display: inline-block;
 }
-.li2 a:hover {
-    transform: scale(1.1);
-}
-
-#li1 {
+li {
   float: left;
   list-style-type: none;
 }
 
-#li1 a {
+li a {
   display: block;
+  padding: 10px;
 }
-#li1 a:hover {
+li a:hover {
     transform: scale(1.1);
-}ransform: scale(1.1);
 }
 #gracethomas1 {
     color: aliceblue;
@@ -293,7 +274,6 @@ a.books:hover {
 
 
 </style>
-
 <script>
     function openNav() {
       document.getElementById("mySidebar").style.width = "250px";
@@ -314,13 +294,16 @@ a.books:hover {
     <img src="thesociety2.jpg" width="1100px" height="600px" id="societyimg">
 
         <!-- sidebar -->
+        <!-- sidebar -->
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <h2>LATEST</H2>
-            <a href="https://grace-th3.github.io/websiteb/metgala2021.html">Official Review of the 2021 Met Gala</a>
-            <a href="https://grace-th3.github.io/websiteb/harrystylesbooks.html">Reviewing Harry Styles' Favourite Books</a>
-            <a href="https://grace-th3.github.io/websiteb/ireadalittlelife.html">I read 'A Little Life' by Hanya Yanagihara and it BROKE my heart</a>
-            <a href="https://grace-th3.github.io/websiteb/thesociety.html">Dear Netflix, Bring Back The Society</a>
+            <a href="https://grace-th3.github.io/websiteb/metgala2021.html"><h4>Official Review of the 2021 Met Gala</h4></a>
+            <a href="https://grace-th3.github.io/websiteb/harrystylesbooks.html"><h4>Reviewing Harry Styles' Favourite Books</h4></a>
+            <a href="https://grace-th3.github.io/websiteb/ireadalittlelife.html"><h4>I read 'A Little Life' by Hanya Yanagihara and it BROKE my heart</h4></a>
+            <a href="https://grace-th3.github.io/websiteb/thesociety.html"><h4>Dear Netflix, Bring Back The Society</h4></a>
+            <a href="https://grace-th3.github.io/websiteb/storyboard.html"><h4>Website Storyboard</h4></a>
+            <a href="https://grace-th3.github.io/websiteb/websitedescription.html"><h4>Website Description</h4></a>
           </div>
           
 
