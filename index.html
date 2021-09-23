@@ -8,6 +8,10 @@
     <link rel="shortcut icon" type="image/png" href="g-removebg-preview.png" sizes="32x32">
 </head>
 <style>
+body {
+    margin:0;
+    overflow-x: hidden;
+}
     
 .family {
     position : fixed;
@@ -35,10 +39,6 @@ a.family:hover {
 #hanya {
     max-width: 100%;
 }
-body {
-    margin:0;
-    overflow-x: hidden;
-}
 .myHeader {
     background:darkred;
     width : 100%;
@@ -53,7 +53,7 @@ body {
      text-decoration: none;
      color: black;
  }
- 
+
 #main {
   transition: margin-left .5s;
   padding: 16px;
@@ -113,13 +113,14 @@ body {
     src: url(NewYork.otf);
 }
  .wrapper {
+     box-sizing: border-box;
         display :grid;
         grid-template-columns: 384px 512px 384px;
         grid-template-rows: 61.6px 462px 61.6px;
         grid-template-areas: "banner banner banner"
                              "nav body side"
                              "sha dha gha"
-                             "footer footer footer"
+                             "footer footer footer";
         }
 
 
@@ -131,8 +132,7 @@ body {
     padding-right: 10px;
     line-height: 150%;
     min-height: 55vh;
-    display: flex;
-    flex-direction: column;
+    max-width: 100%;
 
 }
 .AboutMe h2 {
@@ -146,8 +146,7 @@ body {
     padding: 10px;
     line-height: 150%;
     min-height: 55vh;
-    display: flex;
-    flex-direction: column;
+    max-width: 100%;
 
 }
 .PatreonTable h2 {
@@ -160,10 +159,12 @@ table, th, td {
     background-color:#d2a15e;
     grid-area: sha;    
     padding: 10px;
-    line-height: 200%;
     min-height: 55vh;
     text-decoration: none;
     padding-right: 5px;
+    padding-right: 10px;
+    line-height: 150%;
+    max-width: 100%;
 
 }
 .myGody h2 {
@@ -183,6 +184,8 @@ table, th, td {
     padding-right: 5px;
     line-height: 150%;
     text-decoration: none;
+    width: 97.15%;
+    max-width: 100%;
 }
 .myBody h2 {
     color: black;
@@ -266,6 +269,7 @@ li a:hover {
     padding-right: 20px;
     padding-left: 5px;
     line-height: 150%;
+    max-width: 100%;
 }
 .MetGala h2 {
     font-family: lemonmilk;
@@ -277,16 +281,25 @@ li a:hover {
     background-color: #c0a185; 
     text-decoration: none; 
     padding-left: 10px;
-    padding-right: 5px;  
+    padding-right: 10px;  
     line-height: 150%; 
+    width: 100%;
+    max-width: 100%;
 }
 .myMovies h2 {
     font-family: lemonmilk;
+    padding-right: 10px;
 }
 .movies {
     color: black;
 }
 
+#societyimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
 
 #simuliu {
     display: block;
@@ -305,46 +318,60 @@ li a:hover {
     src: url(LEMONMILK-Regular.otf);
 }
 @media only screen and (max-width: 620px) {
-    /* .myMovies {
-                position : fixed;
-                top : 90px;
-                left : -150px;
-                width : 200px;
-                padding : 0 10px 50px;
-                border-style: solid;
-                border-width : thin;
-                opacity : 0%;
-                transition : 1s;
+        .wrapper {
+                display :grid;
+                grid-template-columns: auto;
+                grid-template-rows: 30vw;
+                grid-template-areas:
+                             "banner"
+                             "nav
+                             "body"
+                             "side"
+                             "sha"
+                             "dha"
+                             "gha"
+                             "footer";
             }
-
-            .myMovies p {
-                background-color: bisque;
-                width : 50%;
-                padding : 10px;
-                margin : 0 auto;
-                margin-bottom : 10px;
-                border-style: solid;
-                border-width : thin;
-
-            } */
-    .myBody, .myGody, .myMovies, .PatreonTable, .MetGala {
-        width: 100%;
+    #table {
+        margin-right: 20px;
     }
-    
-    #hslovemixtape {
-        opacity: 0%;
+    #two {
+        display: hidden;
     }
-    #kk {
-        opacity: 0%;
+    #three {
+        display: hidden;
     }
-    #simuliu {
-        opacity: 0%;
+    #four {
+        display: hidden;
     }
-    table, th, td  {
-        display: block;
+}
+@media  (max-width: 700px) {
+    .wrapper {
+                display :grid;
+                margin-top: 65px;
+                grid-template-columns: 100vw;
+                grid-template-rows: auto;
+                grid-template-areas:
+                             "banner"
+                             "nav"
+                             "body"
+                             "side"
+                             "sha"
+                             "dha"
+                             "gha"
+                             "footer";
+            }
+    #table {
+        margin-right: 10px;
     }
-    #hanya {
-        opacity: 0%;
+    #two {
+        display: hidden;
+    }
+    #three {
+        display: hidden;
+    }
+    #four {
+        display: hidden;
     }
 }
 </style>
@@ -380,35 +407,36 @@ li a:hover {
             <a href="https://grace-th3.github.io/websiteb/storyboard.html"><h4>Website Storyboard</h4></a>
             <a href="https://grace-th3.github.io/websiteb/websitedescription.html"><h4>Website Description</h4></a>
           </div>
+
+            <!-- a little life -->
+            <div class="myMovies" id="myIndID">
+                <a class="movies" href="https://grace-th3.github.io/websiteb/ireadalittlelife.html"><h2>I read 'A Little Life' by Hanya Yanagihara and it BROKE my heart</h2></a>
+                <p id="two">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi dolore repellendus quas.</p>
+                <img id="hanya" src="hanyaalittlelife.jpg" width="350px" height="250px">
+            </div>
         
+                <!-- met gala -->
+                <div class="MetGala">
+                    <a class ="met" href="https://github.com/grace-th3/websiteb/metgala2021.html"><h2>Official Review of the 2021 Met Gala</h2></a>
+                    <p id="three">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa veniam labore adipisci! Lorem ipsum dolor sit amet </p>
+                    <a href="https://grace-th3.github.io/websiteb/metgala2021.html">
+                    <img id="kk" src="kim kardashian met gala 2021.jpg" width="350px" height="250px">
+                </a>
+                </div>
+            
+                <!-- harry styles -->
+                <div class="myBody">
+                    <a class="books"href="https://grace-th3.github.io/websiteb/harrystylesbooks.html"><h2>Reviewing Harry Styles' Favourite Books</h2></a>
+                    <p id="four">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam deleniti ut necessitatibus.</p>
+                    <a href="https://grace-th3.github.io/websiteb/harrystylesbooks.html"><img id="hslovemixtape" src="harrystyles.jpg" width="400px" height="290px"></a>
+                </div>
 
-    <!-- a little life -->
-    <div class="myMovies" id="myIndID">
-        <a class="movies" href="https://grace-th3.github.io/websiteb/ireadalittlelife.html"><h2>I read 'A Little Life' by Hanya Yanagihara and it BROKE my heart</h2></a>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi dolore repellendus quas.
-        <img id="hanya" src="hanyaalittlelife.jpg" width="350px" height="250px">
-    </div>
-
-        <!-- met gala -->
-        <div class="MetGala">
-            <a class ="met" href="https://github.com/grace-th3/websiteb/metgala2021.html"><h2>Official Review of the 2021 Met Gala</h2></a>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa veniam labore adipisci! Lorem ipsum dolor sit amet 
-            <a href="https://grace-th3.github.io/websiteb/metgala2021.html">
-            <img id="kk" src="kim kardashian met gala 2021.jpg" width="350px" height="250px">
-        </a>
-        </div>
-    
-        <!-- harry styles -->
-        <div class="myBody">
-            <a class="books"href="https://grace-th3.github.io/websiteb/harrystylesbooks.html"><h2>Reviewing Harry Styles' Favourite Books</h2></a>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam deleniti ut necessitatibus.
-            <a href="https://grace-th3.github.io/websiteb/harrystylesbooks.html"><img id="hslovemixtape" src="harrystyles.jpg" width="400px" height="290px"></a>
-        </div>
 
         <!-- the society -->
         <div class="myGody">
             <a  class="society" href="https://grace-th3.github.io/websiteb/thesociety.html"><h2>Dear Netflix, Bring Back The Society</h2></a>
-            Arguably one of the best Netflix series and yall cancel it?? Embarrassing.
+            Lorem, ipsum dolor.
+            <a id="societyimg"href="https://grace-th3.github.io/websiteb/thesociety.html"><img src="thesociety2.jpg" height="170px" width ="280px"></a>
         </div>
 
     <!-- patreon table-->
