@@ -12,6 +12,10 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
+    max-width: 100%;
+}
+#hanya {
+    max-width: 100%;
 }
 body {
     margin:0;
@@ -93,8 +97,8 @@ body {
 }
  .wrapper {
         display :grid;
-        grid-template-columns: 30vw 40vw 30vw;
-        grid-template-rows: 10vh 75vh 10vh;
+        grid-template-columns: 384px 512px 384px;
+        grid-template-rows: 61.6px 462px 61.6px;
         grid-template-areas: "banner banner banner"
                              "nav body side"
                              "sha dha gha"
@@ -124,7 +128,7 @@ body {
     grid-area: dha;
     padding: 10px;
     line-height: 150%;
-    min-height: 50vh;
+    min-height: 55vh;
     display: flex;
     flex-direction: column;
 
@@ -140,7 +144,7 @@ table, th, td {
     grid-area: sha;    
     padding: 10px;
     line-height: 200%;
-    min-height: 50vh;
+    min-height: 55vh;
     text-decoration: none;
     padding-right: 5px;
 
@@ -259,8 +263,24 @@ li a:hover {
 }
 
 
-@media (max-width: 700px) {
-    .myMovies {
+#simuliu {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+#kk {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+@font-face {
+    font-family: lemonmilk;
+    src: url(LEMONMILK-Regular.otf);
+}
+@media only screen and (max-width: 620px) {
+    /* .myMovies {
                 position : fixed;
                 top : 90px;
                 left : -150px;
@@ -281,25 +301,40 @@ li a:hover {
                 border-style: solid;
                 border-width : thin;
 
-            }
+            } */
+    .myBody, .myGody, .myMovies, .PatreonTable, .MetGala {
+        width: 100%;
+    }
     
-}
-#simuliu {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-#kk {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-@font-face {
-    font-family: lemonmilk;
-    src: url(LEMONMILK-Regular.otf);
+    #hslovemixtape {
+        opacity: 0%;
+    }
+    #kk {
+        opacity: 0%;
+    }
+    #simuliu {
+        opacity: 0%;
+    }
+    table, th, td  {
+        display: block;
+    }
+    #hanya {
+        opacity: 0%;
+    }
 }
 </style>
 
+<script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
 
 <body>
     <div class="wrapper">
@@ -320,24 +355,13 @@ li a:hover {
             <a href="https://grace-th3.github.io/websiteb/storyboard.html"><h4>Website Storyboard</h4></a>
             <a href="https://grace-th3.github.io/websiteb/websitedescription.html"><h4>Website Description</h4></a>
           </div>
-          
-          <script>
-          function openNav() {
-            document.getElementById("mySidebar").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
-          }
-          
-          function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
-            document.getElementById("main").style.marginLeft= "0";
-          }
-          </script>
+        
 
     <!-- a little life -->
     <div class="myMovies" id="myIndID">
         <a class="movies" href="https://grace-th3.github.io/websiteb/ireadalittlelife.html"><h2>I read 'A Little Life' by Hanya Yanagihara and it BROKE my heart</h2></a>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi dolore repellendus quas.
-        <img src="hanyaalittlelife.jpg" width="350px" height="250px">
+        <img id="hanya" src="hanyaalittlelife.jpg" width="350px" height="250px">
     </div>
 
         <!-- met gala -->
