@@ -13,17 +13,16 @@
     }
 
 
-.myHeader {
+    .myHeader {
     background:darkred;
     width : 100%;
-    height : 60px;
+    height : 65px;
     top: 0;
     left: 0%;
     position: fixed;
     text-decoration:none;
  }
-.myHeader h2{
-     text-align: center;
+ .myHeader h2{
      font-family: newyork;
      text-decoration: none;
      color: black;
@@ -75,8 +74,8 @@
 }
 
 .openbtn {
-  font-size: 25px;
-  padding: 10px 15px;
+  font-size: 26px;
+  padding: 15px 15px;
   border: none;
   background-color: darkred;
   float: left;
@@ -308,6 +307,33 @@ li a:hover {
 }
 .fixedadvert h1 {
     color: white;
+}
+@media (max-width: 620px) {
+    .myHeader {
+        width: 100%;
+    }
+    .fixedadvert {
+        display: none;
+    }
+    .article {
+        padding-left: 10px;
+    }
+    #cocacola {
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+    .footer {
+        width: 100%;
+    }
+    #allrightsreserved {
+        padding-right: 10px;
+    }
+    .related {
+        flex-direction: column;
+        flex: 100%;
+        min-width: 100%;
+    }
+    
 }
 
 </style>

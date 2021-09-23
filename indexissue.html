@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .myHeader {
+    background:darkred;
+    width : 100%;
+    height : 65px;
+    top: 0;
+    left: 0%;
+    position: fixed;
+    text-decoration:none;
+ }
+ .myHeader h2{
+     font-family: newyork;
+     text-decoration: none;
+     color: black;
+ }
+ #theessentials:link {
+     text-decoration: black;
+ }
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: darkred;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  font-family: lemonmilk;
+}
+.sidebar h2 {
+    color:black;
+    padding-left: 30px;
+}
+.family {
+    top : 0;
+    right: 10px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ 
+ .family:link {
+     text-decoration: none;
+}
+.family:hover {
+ text-decoration: underline;
+}
+
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 10px;
+  color:grey;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 26px;
+  padding: 15px 15px;
+  border: none;
+  background-color: darkred;
+  float: left;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+@font-face {
+    font-family: newyork;
+    src: url(NewYork.otf);
+}
+.footer {
+    font-family: monospace;
+    background-color:slategrey;
+    font-size: medium;
+    margin-top: 6.8cm;
+    text-align: center;
+    width: 1280px;
+    float: left;
+}
+
+
+</style>
+<body>
+           <!-- Code for banner  -->
+           <div class="myHeader">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <a href="https://grace-th3.github.io/websiteb/" id="theessentials"><h2>THE ESSENTIALS</h2></a>
+            <a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin"><h4 class="family">Join the Family!</h4></a>
+            </div>
+             <!-- sidebar -->
+             <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <h2>LATEST</H2>
+                <a href="https://grace-th3.github.io/websiteb/metgala2021.html"><h4>Official Review of the 2021 Met Gala</h4></a>
+                <a href="https://grace-th3.github.io/websiteb/harrystylesbooks.html"><h4>Reviewing Harry Styles' Favourite Books</h4></a>
+                <a href="https://grace-th3.github.io/websiteb/ireadalittlelife.html"><h4>I read 'A Little Life' by Hanya Yanagihara and it BROKE my heart</h4></a>
+                <a href="https://grace-th3.github.io/websiteb/thesociety.html"><h4>Dear Netflix, Bring Back The Society</h4></a>
+                <a href="https://grace-th3.github.io/websiteb/storyboard.html"><h4>Website Storyboard</h4></a>
+                <a href="https://grace-th3.github.io/websiteb/websitedescription.html"><h4>Website Description</h4></a>
+              </div>
+              <div class="footer">
+                <h4 id="gracethomas1">© Grace Thomas 2021</h4>
+                <h4 id="allrightsreserved">All rights reserved</h4>
+                <div class="align">
+                    <ul>
+                    <li>
+                        <a
+                    href="https://www.instagram.com/">
+                <img src="instagram.jpg"alt="Instagram" width=20px height="20px">
+            </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://twitter.com/">
+                        <img src="twitter.png"alt="Twitter" width=20px height="20px">
+                    </a> 
+                </li>
+    
+                <li><a
+                    href="https://www.tiktok.com/en/">
+                <img src="tiktok3.png"alt="Tiktok" width=20px height="20px">
+            </a> </li>
+                <li><a
+                    href="https://www.youtube.com/">
+                <img src="youtube.png"alt="Youtube" width=20px height="20px">
+            </a> </li>
+        </ul>
+    
+                </div>
+</body>
+</html>

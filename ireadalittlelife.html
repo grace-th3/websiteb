@@ -17,14 +17,13 @@ body {
 .myHeader {
     background:darkred;
     width : 100%;
-    height : 60px;
+    height : 65px;
     top: 0;
     left: 0%;
     position: fixed;
     text-decoration:none;
  }
  .myHeader h2{
-     text-align: center;
      font-family: newyork;
      text-decoration: none;
      color: black;
@@ -34,7 +33,6 @@ body {
  }
 
  #alittlelife {
-     grid-area: img;
      align-content: center;
      margin-top: 100px;
      display: block;
@@ -83,6 +81,9 @@ a.family:hover {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     }
+.creditsdates h1 {
+    font-family: lemonmilk;
+}
 #gracethomas {
     color: red;
 }
@@ -218,8 +219,8 @@ a.books:hover {
 }
 
 .openbtn {
-  font-size: 25px;
-  padding: 10px 15px;
+  font-size: 26px;
+  padding: 15px 15px;
   border: none;
   background-color: darkred;
   float: left;
@@ -274,19 +275,30 @@ li a:hover {
     src: url(Chapaza.ttf);
 }
 @media (max-width: 620px) {
+    .myHeader {
+        width: 100%;
+    }
     .fixedadvert {
         display: none;
     }
     .article {
         padding-left: 10px;
     }
-    .flex1, .flex2, .flex3 {
-        width: 100%;
-    }
     #cocacola {
         padding-left: 10px;
         padding-right: 20px;
     }
+    .footer {
+        width: 100%;
+    }
+    #allrightsreserved {
+        padding-right: 10px;
+    }
+    .related {
+        flex-direction: column;
+        flex: 100%;
+    }
+    
 }
 
 
