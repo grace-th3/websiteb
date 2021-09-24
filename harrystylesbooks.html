@@ -94,6 +94,10 @@
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  }
+ #hm {
+     max-width: 100%;
+     max-height: 650px;
+ }
  
  .family:link {
      text-decoration: none;
@@ -138,6 +142,7 @@
 }
 
 #footer {
+    padding: 10px;
     bottom: 0%;
 }
 .fixedadvert h3 {
@@ -206,6 +211,9 @@ a.books:hover {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100px;
+    margin-bottom: 100px;
+    max-width: 100%;
+    max-height: 100%;
 
 }
 .related {
@@ -258,6 +266,7 @@ a.books:hover {
 }
 .footer {
     font-family: monospace;
+    font-size: small; 
     background-color:slategrey;
     height: 60px;
     text-align: center;
@@ -308,7 +317,11 @@ li a:hover {
 .fixedadvert h1 {
     color: white;
 }
-@media (max-width: 620px) {
+#charles {
+    max-width: 100%;
+    max-height: 500px;
+}
+@media only screen and (max-width: 620px) {
     .myHeader {
         width: 100%;
     }
@@ -332,6 +345,39 @@ li a:hover {
         flex-direction: column;
         flex: 100%;
         min-width: 100%;
+    }
+    #hm {
+        width: 100%;
+    }
+    
+}
+@media (max-width: 700px) {
+    .myHeader {
+        width: 100%;
+    }
+    .fixedadvert {
+        display: none;
+    }
+    .article {
+        padding-left: 10px;
+    }
+    #cocacola {
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+    .footer {
+        width: 100%;
+    }
+    #allrightsreserved {
+        padding-right: 10px;
+    }
+    .related {
+        flex-direction: column;
+        flex: 100%;
+        min-width: 100%;
+    }
+    #hm {
+        width: 100%;
     }
     
 }
